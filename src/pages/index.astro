@@ -3,6 +3,7 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 import Hero from '../components/Hero.astro';
 import Progress from '../components/Progress.astro';
+import Timeline from '../components/Timeline.astro';
 ---
 
 <Layout title="Welcome to Astro.">
@@ -13,11 +14,13 @@ import Progress from '../components/Progress.astro';
 		<div class="skills-list">
 			<Progress title="Prokrastinieren" progress="70" color='red' />
 			<Progress title="Bingewatchen" progress="90" color='blue'/>
-			<Progress title="Chillen" progress="40" color='green'/>
+			<Progress title="Konzentrieren" progress="20" color='green'/>
 			<Progress title="Aufschieben" progress="56" color='fuchsia'/>
 		</div>
 	</section>
-	<section id="timeline"></section>
+	<section id="timeline">
+		<Timeline />
+	</section>
 	<section id="projects"></section>
 </Layout>
 
